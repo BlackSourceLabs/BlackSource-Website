@@ -1,0 +1,26 @@
+body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    }
+
+div {
+    width: 600px;
+    margin: 5em auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-color: black;
+    }
+    div {
+        width: auto;
+        margin: 2em 2em auto;
+        border-radius: 0;
+        padding: 1em;
+    }
+}
