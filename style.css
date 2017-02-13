@@ -2,6 +2,7 @@ body {
         margin: 0;
         padding: 0;
         font-family: "Uni Sans", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        background-color: black;
         background-image: url("assets/images/Galactic.png");
         background-repeat: no-repeat;
         background-position: top;
@@ -10,9 +11,19 @@ body {
 
 #brand {
     text-align: center;
-    vertical-align: center;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    transform: translateY(-15%);
+    resize: vertical;
+    overflow: auto;
+    
 }
 
-h1 {
+#brand h1 {
     font-size: 70px;
+    opacity: 0.90;
 }
+
+
