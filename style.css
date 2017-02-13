@@ -24,3 +24,11 @@ div {
         padding: 1em;
     }
 }
+p {
+    font-family: "UniSansBook"
+}
+
+h1 {
+    font-family: "Uni Sans";
+    font-size: 2.5em;
+}
