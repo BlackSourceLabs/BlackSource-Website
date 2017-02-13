@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('/assets/fonts/UniSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('/assets/fonts/UniSansBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('/assets/fonts/UniSansSemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('/assets/fonts/UniSansBook.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('/assets/fonts/UniSansLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('/assets/fonts/UniSansThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: thin;
+}
