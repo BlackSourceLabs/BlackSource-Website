@@ -1,34 +1,18 @@
 body {
-        background-color: black;
         margin: 0;
         padding: 0;
-        font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-family: "Uni Sans", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        background-image: url("assets/images/Galactic.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        color: white;
     }
 
-div {
-    width: 600px;
-    margin: 5em auto;
-    padding: 50px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-@media (max-width: 700px) {
-    body {
-        background-color: black;
-    }
-    div {
-        width: auto;
-        margin: 2em 2em auto;
-        border-radius: 0;
-        padding: 1em;
-    }
-}
-p {
-    font-family: "UniSansBook"
+#brand {
+    text-align: center;
+    vertical-align: center;
 }
 
 h1 {
-    font-family: "Uni Sans";
-    font-size: 2.5em;
+    font-size: 70px;
 }
