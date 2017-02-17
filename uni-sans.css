@@ -1,14 +1,8 @@
-@font-face {
-    font-family: 'Uni Sans';
-    src: url('/assets/fonts/UniSans.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Uni Sans';
     src: url('/assets/fonts/UniSansBold.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: bold;
 }
 
@@ -16,6 +10,13 @@
     font-family: 'Uni Sans';
     src: url('/assets/fonts/UniSansSemiBold.ttf') format('truetype');
     font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('/assets/fonts/UniSans.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
 
