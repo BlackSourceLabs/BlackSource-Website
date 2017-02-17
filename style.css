@@ -26,6 +26,7 @@ body {
     font-size: 124px;
     opacity: 0.80;
     font-weight: 100;
+    overflow: hidden;
 }
 
 @media (max-width: 1000px) {
@@ -67,7 +68,7 @@ nav {
     position: absolute;
     top: 10px;
     left: 0px;
-    right:10px;
+    right: 0px;
     border-bottom: solid rgba(255, 255, 255, 0.4) 1px;
 }
 
@@ -94,15 +95,38 @@ li {
     float: left;
 }
 
-li > a {
+nav li > a {
     display: block;
     color: white;
     text-align: center;
     padding: 10px 15px;
     border-style: solid;
     border-width: 1px;
-    border-color: white;
+    border-color: rgba(255, 255, 255, 0.7);
     border-radius: 8px;
     margin-left: 60px;
 }
 
+@media (max-width: 800px) {
+    nav li > a {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        text-align: center;
+        background-color: rgba(0, 0, 00, 0.1);
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        text-align: center;
+        float: none;
+    }
+    nav a {
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+}
