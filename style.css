@@ -1,6 +1,36 @@
-html {
+.galactic-1 {
     background: url(assets/images/Galactic-Dark.jpg) no-repeat center center fixed;
     background-size: cover;
+}
+
+.galactic-2 {
+    background: url(assets/images/Galactic-2.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.galactic-3 {
+    background: url(assets/images/Galactic-3.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#transparency-layer {
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -2;
+}
+
+@media (max-width: 500px) {
+    .galactic-background {
+/*        background: none;*/
+/*        background-color: black;*/
+    }
 }
 
 body {
@@ -11,9 +41,26 @@ body {
     background-color: black;
     letter-spacing: 1.5px;
     color: white;
+/*    MAKE ROOM FOR NAVI BAR*/
+    margin-top: 100px;
+    z-index: 0;
 }
 
-/** BLACK SOURCE BRAND */
+.light {
+    background-color: #eee;
+    color: black;
+}
+
+.light h1 {
+    color: #444
+}
+
+/** 
+===============================================
+    BLACK SOURCE BRAND 
+===============================================
+*/
+
 #brand {
     font-family: 'Uni Sans'; 
     font-weight: 100; 
@@ -44,7 +91,19 @@ body {
 @media (max-width: 500px) {
     #brand h1 {
         font-size: 50px;
+/*        position: absolute;*/
+/*        bottom: 10px;*/
+        width: 100%;
+/*        left: 0px;*/
+/*        right: 0px;*/
     }
+    
+/*
+    #brand {
+        position: absolute;
+        bottom: 10px;
+    }
+*/
 }
 
 .center {
@@ -58,7 +117,12 @@ body {
     transform: translateY(-50%);
 }
 
-/** NAVIGATION LINKS */
+
+/** 
+===============================================
+    NAVIGATION LINKS
+===============================================
+*/
 nav {
     font-family: "Uni Sans";
     font-weight: 300;
@@ -72,6 +136,13 @@ nav {
     border-bottom: solid rgba(255, 255, 255, 0.4) 1px;
 }
 
+.light nav {
+    background-color: black;
+    background: url(assets/images/Galactic-Dark.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
 nav a {
     text-decoration: none;
 }
@@ -80,18 +151,17 @@ nav a:hover {
     opacity: 0.7;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
     text-align: center;
 }
 
-li {
+nav li {
     float: left;
 }
 
@@ -103,7 +173,7 @@ nav li > a {
     border-style: solid;
     border-width: 1px;
     border-color: rgba(255, 255, 255, 0.7);
-    border-radius: 8px;
+    border-radius: 6px;
     margin-left: 60px;
 }
 
@@ -129,4 +199,43 @@ nav li > a {
         margin: 10px 0 0 0;
         text-align: center;
     }
+    
+    body {
+        margin-top: 300px;
+    }
+}
+
+
+/** 
+===============================================
+    ARTICLE TEXT
+===============================================
+*/
+
+.document-container {
+    text-align: center;
+}
+
+.light h1 {
+    font-size: 36px;
+    position: relative;
+    top: 30px;
+/*    padding-top: 10px;*/
+}
+
+article {
+    text-align: left;
+    background-color: white;
+    box-shadow: 2px 2px 10px #888888;
+    max-width: 900px;
+    margin: 30px;
+    margin-top: 50px;
+    border: solid rgba(0, 0, 0 ,0.5) 1px;
+    padding: 20px 30px;
+    display: inline-block;
+}
+
+article p , article li {
+    font-family: 'Oxygen';
+    font-size: 16px;
 }
