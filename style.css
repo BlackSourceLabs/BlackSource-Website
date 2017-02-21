@@ -1,3 +1,14 @@
+/** 
+===============================================
+    IMAGE BACKGROUNDS
+===============================================
+*/
+
+.black-nectar-mockup {
+    background: url(assets/images/BlackNectar-Mockup-1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
 .galactic-1 {
     background: url(assets/images/Galactic-Dark.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -14,7 +25,6 @@
 }
 
 #transparency-layer {
-    background-color: black;
     position: fixed;
     top: 0px;
     bottom: 0px;
@@ -26,9 +36,26 @@
     z-index: -2;
 }
 
+#purple-overlay {
+    background-color: #1D1D1D;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0px;
+    z-index: -2;
+}
+
 @media (max-width: 500px) {
     .galactic-background {
     }
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -325,3 +352,66 @@ article a:hover {
 }
 */
 
+
+/** 
+===============================================
+    BLACKNECTAR SIGN UP PAGE
+===============================================
+*/
+
+div.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blacknectar-logo-container {
+    float: left;
+    width: 40%;
+/*    height: 100%;*/
+    top: 0;
+    margin: 0;
+    left: 0px;
+    text-align: center;
+    border-right: solid rgba(255,255,255,0.6) 1px;
+}
+
+#blacknectar-logo-container p {
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+#blacknectar-logo-container img {
+    width: 100%;
+    left: 0;
+    right: 0;
+    max-width: 400px;
+/*    transform: translateY(-50%);*/
+    margin: 0 auto;
+}
+
+#blacknectar-sign-up-container {
+    position: relative;
+    float: right;
+    width: 59%;
+/*    height: 100%;*/
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+#blacknectar-sign-up-container p span {
+    font-weight: 200;
+    color: #ECC040;
+}
+
+#blacknectar-sign-up-container p {
+    font-size: 26px;
+    font-weight: 100;
+    padding: 10px 20px;
+    align-content: center;
+    vertical-align: middle;
+}
