@@ -418,6 +418,37 @@ div.container {
     max-width: 600px;
 }
 
+@media (max-width:600px) {
+
+    html, body {
+        overflow: scroll;
+    }
+    
+    div.container {
+        display: block;
+    }
+    
+    #blacknectar-logo-container {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #blacknectar-logo-container img {
+        width: 70%;
+        max-width: 400px;
+        margin: 0px auto;
+    }
+    
+    #blacknectar-sign-up-container {
+        float: none;
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+}
+
 
 /** 
 ===============================================
@@ -470,4 +501,21 @@ div.container {
     margin-top: 5px;
     margin-bottom: 15px;
     border-radius: 4px;
+}
+
+@media (max-width:600px) {
+    
+    #mc_embed_signup {
+        text-align: center;
+    }
+    
+    #mc_embed_signup form {
+        text-align: center;
+    }
+    
+    #mc_embed_signup input.email, #mc_embed_signup input.button {
+        display: inline-block;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
