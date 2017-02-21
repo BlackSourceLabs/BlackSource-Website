@@ -428,8 +428,6 @@ div.container {
 
 #mc_embed_signup {
     margin: 0 15px;
-    border-top: solid rgba(255,255,255,0.5) 1px;
-/*    border-radius: 5px;*/
     background-color: transparent;
     max-width: 600px;
 }
@@ -450,7 +448,7 @@ div.container {
 
 #mc_embed_signup form {
     background-color: transparent;
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 #mc_embed_signup input {
@@ -469,6 +467,10 @@ div.container {
     border: solid white 1px;
 }
 
+#mc_embed_signup input.button:hover {
+    background-color: #ECC040;
+}
+
 #mc_embed_signup input.email {
     margin-top: 5px;
     margin-bottom: 25px;
@@ -478,6 +480,8 @@ div.container {
     border-bottom: solid white 1px;
     color: white;
 }
-#mc_embed_signup input.button:hover {
-    background-color: #ECC040;
+
+#mc_embed_signup input.email:focus {
+    outline-color: #ECC040;
+    outline-width: 2px;
 }
