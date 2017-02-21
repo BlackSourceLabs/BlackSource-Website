@@ -412,7 +412,7 @@ div.container {
 #blacknectar-sign-up-container p {
     font-size: 26px;
     font-weight: 100;
-    padding: 10px 20px;
+    padding: 10px 35px;
     align-content: center;
     vertical-align: middle;
     max-width: 600px;
@@ -463,5 +463,11 @@ div.container {
     font-size: 18px;
     font-weight: 600;
     color: black;
-        
+    border-radius: 4px;
+}
+
+#mc_embed_signup input.email {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
 }
