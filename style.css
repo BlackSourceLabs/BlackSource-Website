@@ -462,6 +462,10 @@ div.container {
         margin: 0px auto;
     }
     
+    #blacknectar-sign-up-container p{
+        font-weight: 200;
+    }
+    
     #blacknectar-sign-up-container {
         float: none;
         width: 100%;
