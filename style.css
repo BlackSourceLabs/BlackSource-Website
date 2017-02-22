@@ -32,7 +32,8 @@
 }
 
 #purple-overlay {
-    background-color: rgba(29, 29, 29, 0.75);
+/*    background-color: rgba(29, 29, 29, 0.75);*/
+    background-color: rgba(0, 0, 0, 0.7);
     opacity: 1.0;
     position: fixed;
     top: 0;
