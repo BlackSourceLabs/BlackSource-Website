@@ -4,12 +4,6 @@
 ===============================================
 */
 
-.black-nectar-mockup {
-    background: url(assets/images/BlackNectar-Mockup-1.jpg) no-repeat center center fixed;
-    background-size: cover;
-    overflow: hidden;
-}
-
 .galactic-1 {
     background: url(assets/images/Galactic-Dark.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -38,8 +32,8 @@
 }
 
 #purple-overlay {
-    background-color: #1D1D1D;
-    opacity: 0.75;
+    background-color: rgba(29, 29, 29, 0.75);
+    opacity: 1.0;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -69,6 +63,8 @@ body {
 /*    MAKE ROOM FOR NAVI BAR*/
     margin-top: 100px;
     z-index: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .light {
@@ -224,7 +220,7 @@ nav li > a {
     nav {
         text-align: center;
         background-color: rgba(0, 0, 00, 0.1);
-        position: absolute;
+        position: relative;
     }
     nav ul {
         text-align: center;
@@ -255,21 +251,20 @@ nav li > a {
 }
 
 article {
+    position: relative;
     font-family: 'Oxygen', sans-serif;
     font-weight: 100;
     color: #ddd;
     text-align: left;
     background-color: rgba(0,0,0, 0.5);
-/*    box-shadow: 2px 2px 10px #888888;*/
     max-width: 800px;
     min-width: 300px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-/*    border: solid rgba(255, 255, 255 ,0.5) 1px;*/
+    margin-bottom: 50px;
     border: solid gray 1px;
     padding: 20px 40px;
-/*    display: inline-block;*/
 }
 
 article h1, article h2, article h3 {
@@ -345,6 +340,22 @@ article a:hover {
 
 @media (max-width:600px) {
     
+    body {
+        overflow: hidden;
+    }
+    
+    html {
+        overflow: hidden;
+    }
+    
+    .document-container {
+        overflow: hidden;
+    }
+
+    article {
+        overflow: hidden;
+    }
+    
     .intro {
         font-size: 24px;    
     }
@@ -355,6 +366,12 @@ article a:hover {
     BLACKNECTAR SIGN UP PAGE
 ===============================================
 */
+
+.black-nectar-mockup {
+    background: url(assets/images/BlackNectar-Mockup-1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
 
 div.container {
     height: 100%;
@@ -417,8 +434,16 @@ div.container {
 
 @media (max-width:600px) {
 
-    html, body {
-        overflow: scroll;
+     body {
+        overflow-y: scroll;
+        margin-top: 0;
+    }
+    
+    .black-nectar-mockup {
+        background: url(assets/images/BlackNectar-Mockup-1.jpg) no-repeat center center fixed;
+        background-size: cover;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
     
     div.container {
