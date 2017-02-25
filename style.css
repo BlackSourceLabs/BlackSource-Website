@@ -560,3 +560,30 @@ div.container {
         margin-top: 20px;
     }
 }
+
+/** 
+===============================================
+    FACEBOOK LIKE BUTTON
+===============================================
+*/
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.fb-like {
+    position: relative;
+    text-align: center;
+    display: block;
+    z-index: 3;
+}
