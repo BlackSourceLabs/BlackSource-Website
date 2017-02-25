@@ -449,6 +449,7 @@ div.container {
     
     div.container {
         display: block;
+        height: auto;
     }
     
     #blacknectar-logo-container {
@@ -592,6 +593,6 @@ footer {
     
     footer {
         position: relative;
-        margin-top: -50px;
+        margin-top: 30px;
     }
 }
