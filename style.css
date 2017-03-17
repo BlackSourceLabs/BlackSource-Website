@@ -530,7 +530,7 @@ div.container {
     background-color: #ECC040;
 }
 
-#mc_embed_signup input.email {
+#mc_embed_signup input, select {
     margin-top: 5px;
     margin-bottom: 25px;
     border-radius: 2px;
@@ -540,7 +540,7 @@ div.container {
     color: white;
 }
 
-#mc_embed_signup input.email:focus {
+#mc_embed_signup input:focus {
     outline-color: #ECC040;
     outline-width: 2px;
 }
@@ -595,4 +595,35 @@ footer {
         position: relative;
         margin-top: 30px;
     }
+}
+
+
+/** 
+===============================================
+    BETA TEST
+===============================================
+*/
+.beta-test-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.beta-test-container p {
+    font-size: 24px;
+    font-weight: 200;
+    padding-bottom: 100px;
+}
+
+.beta-test-container div {
+    display: inline;
+}
+
+@media (max-width:600px) {
+    
+    .beta-test-container p {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    
 }
