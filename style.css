@@ -5,7 +5,7 @@
 */
 
 .beta-test-background {
-    background: url(assets/images/Beta-Test.jpg);
+    background: url(assets/images/Beta-Test.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -584,7 +584,7 @@ div.container {
 */
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     left: 0px;
     right: 0px;
