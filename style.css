@@ -629,6 +629,21 @@ footer {
   
 }
 
+.beta-test-container a {
+    text-decoration: none;
+    color: #ECC040;
+    font-weight: 300;
+}
+
+.beta-test-container a:visited {
+
+}
+
+.beta-test-container a:hover {
+    text-decoration: underline;
+}
+
+
 .beta-test-container > div#mc_embed_signup {
     border: solid rgba(255,255,255, 0.4) 1px;
     margin: 0 auto;
