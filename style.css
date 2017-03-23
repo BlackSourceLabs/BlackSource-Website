@@ -493,7 +493,7 @@ div.container {
 #mc_embed_signup {
     margin: 0 15px;
     background-color: transparent;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 #mc_embed_signup:hover {
@@ -515,16 +515,22 @@ div.container {
     padding: 20px 20px;
 }
 
-#mc_embed_signup input {
+#mc_embed_signup input, #mc_embed_signup input.email {
     margin-top: 20px;
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#mc_embed_signup select {
+    font-size: 16px;
+    font-family: 'Oxygen';
 }
 
 #mc_embed_signup input.button {
-/*    background-color: #ECC040;*/
     font-family: 'Uni Sans';
     font-size: 18px;
     font-weight: 600;
-/*    color: black;*/
     color: white;
     background-color: transparent;
     border-radius: 4px;
@@ -564,6 +570,10 @@ div.container {
         display: inline-block;
         text-align: center;
         margin-top: 20px;
+    }
+    
+    #mc_embed_signup input.email {
+        width: 100%;
     }
 }
 
@@ -620,11 +630,12 @@ footer {
 }
 
 .beta-test-container p {
-/*    padding-top: 10%;*/
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 200;
     padding-bottom: 5%;
-    line-height: 1.25;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 1.3;
     margin: 20px 20px;
   
 }
@@ -652,18 +663,20 @@ footer {
     left: 0px;
     right: 0px;
     padding: 30px 30px;
-    width: 100%;
+    width: 600px;
 }
 
 @media (max-width:600px) {
     
     .beta-test-container p {
-        font-size: 20px;
-        padding-bottom: 10px;
+        font-size: 22px;
+        padding: 0 0 50px 0;
     }
     
-    .beta-test-container div {
-        display: block;
+    .beta-test-container > div#mc_embed_signup  {
+        overflow: auto;
+        width: 300px;
+        margin: 0 auto;
     }
     
 }
